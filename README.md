@@ -15,7 +15,7 @@ conda create -p venv python==3.7 -y
 This is a Machine Learning project using Flask.
 
 ## 🚀 Live Demo
-👉 https://your-app-name.onrender.com
+👉 https://bostonhousepricing-3-b6uf.onrender.com
 
 ## 📌 Features
 - Predict house prices
