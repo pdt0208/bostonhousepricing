@@ -10,3 +10,19 @@ conda create environment
 ...
 conda create -p venv python==3.7 -y
 
+# Boston House Price Prediction 🏠
+
+This is a Machine Learning project using Flask.
+
+## 🚀 Live Demo
+👉 https://your-app-name.onrender.com
+
+## 📌 Features
+- Predict house prices
+- Flask backend
+- ML model integration
+
+## 🛠 Tech Stack
+- Python
+- Flask
+- Scikit-learn
