@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Boston House Price Prediction</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet'>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #f2f2f2;
+    }
+
+    .login {
+      background: white;
+      padding: 20px;
+      margin: 50px auto;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input {
+      width: 90%;
+      padding: 8px;
+      margin: 5px;
+    }
+
+    button {
+      padding: 10px;
+      background: blue;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login">
+    <h1>Boston House Price Prediction</h1>
+
+    <form id="form">
+      <input type="number" placeholder="CRIM" required><br>
+      <input type="number" placeholder="ZN" required><br>
+      <input type="number" placeholder="INDUS" required><br>
+      <input type="number" placeholder="CHAS" required><br>
+      <input type="number" placeholder="NOX" required><br>
+      <input type="number" placeholder="RM" required><br>
+      <input type="number" placeholder="Age" required><br>
+      <input type="number" placeholder="DIS" required><br>
+      <input type="number" placeholder="RAD" required><br>
+      <input type="number" placeholder="TAX" required><br>
+      <input type="number" placeholder="PTRATIO" required><br>
+      <input type="number" placeholder="B" required><br>
+      <input type="number" placeholder="LSTAT" required><br>
+
+      <button type="submit">Predict</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script>
+    document.getElementById("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      // Fake prediction (since no backend)
+      let randomPrice = (Math.random() * 50 + 10).toFixed(2);
+
+      document.getElementById("result").innerHTML =
+        "Estimated Price: $" + randomPrice + "k";
+    });
+  </script>
+
+</body>
+</html>
